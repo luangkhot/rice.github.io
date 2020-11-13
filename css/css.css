@@ -35,6 +35,10 @@ table.table tbody tr td {
   padding: 3rem 2rem;
 }
 
+.row {
+  overflow: auto;
+}
+
 nav.navbar {
   background-color: #89A727;
   display: flex;

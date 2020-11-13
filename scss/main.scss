@@ -13,6 +13,9 @@ $font: 'Open Sans', 'Noto Sans Lao', sans-serif;
     margin-bottom: 0;
     padding: 3rem 2rem;
 }
+.row{
+    overflow: auto;
+}
 // navbar start here
 nav.navbar{
     background-color: $primary-color;
