@@ -7,12 +7,12 @@
 .table-title {
   font-size: 24px;
   font-weight: 700;
-  font-family: "Open Sans", "Noto Sans Lao", sans-serif;
+  font-family: "Open Sans", "Phetsarath_OT", sans-serif;
   margin-bottom: 10px;
 }
 
 table.table {
-  font-family: "Open Sans", "Noto Sans Lao", sans-serif;
+  font-family: "Open Sans", "Phetsarath_OT", sans-serif;
   font-weight: 500;
 }
 table.table thead tr {
@@ -91,7 +91,7 @@ nav.navbar .nav-link {
   }
 }
 .top-area .flex .row .box p {
-  font-family: "Open Sans", "Noto Sans Lao", sans-serif;
+  font-family: "Open Sans", "Phetsarath_OT", sans-serif;
   line-height: 1.5;
   margin: 0;
   font-size: 18px;
@@ -105,7 +105,7 @@ nav.navbar .nav-link {
 .top-area .flex .row .box h3.top-area-price {
   font-weight: 700;
   color: #89A727;
-  font-family: "Open Sans", "Noto Sans Lao", sans-serif;
+  font-family: "Open Sans", "Phetsarath_OT", sans-serif;
   line-height: 1.5;
   margin: 0;
 }
@@ -125,7 +125,7 @@ nav.navbar .nav-link {
   }
 }
 .top-area .flex .row .box span {
-  font-family: "Open Sans", "Noto Sans Lao", sans-serif;
+  font-family: "Open Sans", "Phetsarath_OT", sans-serif;
 }
 @media (max-width: 768px) {
   .top-area .flex .row .box span {
@@ -137,7 +137,7 @@ nav.navbar .nav-link {
   margin-bottom: 5px;
 }
 .updated-price nav.nav a {
-  font-family: "Open Sans", "Noto Sans Lao", sans-serif;
+  font-family: "Open Sans", "Phetsarath_OT", sans-serif;
   color: #000;
   cursor: pointer;
 }
@@ -148,13 +148,13 @@ nav.navbar .nav-link {
 footer {
   background-color: #89A727;
   color: #fff;
-  font-family: "Open Sans", "Noto Sans Lao", sans-serif;
+  font-family: "Open Sans", "Phetsarath_OT", sans-serif;
   padding-bottom: 0;
 }
 footer .text-muted {
   color: #fff !important;
   line-height: 2;
-  font-family: "Open Sans", "Noto Sans Lao", sans-serif;
+  font-family: "Open Sans", "Phetsarath_OT", sans-serif;
   font-weight: normal;
 }
 
