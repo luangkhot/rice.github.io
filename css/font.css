@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Noto Sans Lao';
+  src: url(./webfonts/NotoSansLao-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Noto Sans Lao';
+  src: url(./webfonts/NotoSansLao-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Noto Sans Lao';
+  src: url(./webfonts/NotoSansLao-ExtraBold.ttf) format("truetype");
+  font-weight: 700;
+}
+  
+
+/* open san */
+@font-face {
+  font-family: 'Open Sans';
+  src: url(./webfonts/OpenSans-Light.ttf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(./webfonts/OpenSans-Regular.ttf) format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(./webfonts/OpenSans-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url(./webfonts/OpenSans-Bold.ttf) format("truetype");
+  font-weight: 700;
+}
+    

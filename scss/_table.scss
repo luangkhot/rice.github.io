@@ -1,0 +1,29 @@
+.table-title{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: $font;
+    margin-bottom: 10px;
+}
+table.table{
+    font-family: $font;
+    font-weight: 500;
+    thead{
+        tr{
+            background-color: $primary-color;
+            color: #fff;
+            th{
+                font-weight: 500;
+            }
+        }
+    }
+    tbody{
+        tr{
+            th{
+                font-weight: 500;
+            }
+            td{
+                font-weight: 500;
+            }
+        }
+    }
+}

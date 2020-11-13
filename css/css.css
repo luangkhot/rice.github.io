@@ -1,0 +1,157 @@
+@media (min-width: 1024px) and (max-width: 1216px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.table-title {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Open Sans", "Noto Sans Lao", sans-serif;
+  margin-bottom: 10px;
+}
+
+table.table {
+  font-family: "Open Sans", "Noto Sans Lao", sans-serif;
+  font-weight: 500;
+}
+table.table thead tr {
+  background-color: #89A727;
+  color: #fff;
+}
+table.table thead tr th {
+  font-weight: 500;
+}
+table.table tbody tr th {
+  font-weight: 500;
+}
+table.table tbody tr td {
+  font-weight: 500;
+}
+
+.jumbotron {
+  background-color: #fff;
+  margin-bottom: 0;
+  padding: 3rem 2rem;
+}
+
+nav.navbar {
+  background-color: #89A727;
+  display: flex;
+  color: #fff;
+}
+nav.navbar .navbar-brand {
+  color: #fff;
+}
+nav.navbar .nav-link {
+  color: #fff;
+}
+
+.top-area {
+  margin: 0;
+  border-radius: 0;
+  width: 100%;
+  min-height: 350px;
+  max-height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../image/rice.jpeg");
+  display: flex;
+  align-items: center;
+}
+.top-area .container {
+  height: 100%;
+}
+.top-area .flex {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .top-area .flex {
+    align-items: flex-start;
+  }
+}
+.top-area .flex .row {
+  flex-grow: 1;
+}
+.top-area .flex .row .box {
+  border: none;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+  .top-area .flex .row .box {
+    margin-bottom: 5px;
+  }
+}
+.top-area .flex .row .box p {
+  font-family: "Open Sans", "Noto Sans Lao", sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .top-area .flex .row .box p {
+    font-size: 16px;
+  }
+}
+.top-area .flex .row .box h3.top-area-price {
+  font-weight: 700;
+  color: #89A727;
+  font-family: "Open Sans", "Noto Sans Lao", sans-serif;
+  line-height: 1.5;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .top-area .flex .row .box h3.top-area-price {
+    font-size: 20px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .top-area .flex .row .box h3.top-area-price {
+    font-size: 22 !important;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1216px) {
+  .top-area .flex .row .box h3.top-area-price {
+    font-size: 32px;
+  }
+}
+.top-area .flex .row .box span {
+  font-family: "Open Sans", "Noto Sans Lao", sans-serif;
+}
+@media (max-width: 768px) {
+  .top-area .flex .row .box span {
+    font-size: 14px;
+  }
+}
+
+.updated-price nav.nav {
+  margin-bottom: 5px;
+}
+.updated-price nav.nav a {
+  font-family: "Open Sans", "Noto Sans Lao", sans-serif;
+  color: #000;
+  cursor: pointer;
+}
+.updated-price nav.nav a.active {
+  font-weight: 700;
+}
+
+footer {
+  background-color: #89A727;
+  color: #fff;
+  font-family: "Open Sans", "Noto Sans Lao", sans-serif;
+  padding-bottom: 0;
+}
+footer .text-muted {
+  color: #fff !important;
+  line-height: 2;
+  font-family: "Open Sans", "Noto Sans Lao", sans-serif;
+  font-weight: normal;
+}
+
+/*# sourceMappingURL=css.css.map */
