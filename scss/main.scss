@@ -1,21 +1,80 @@
 //Color variable
 $primary-color: #89A727;
+$light-grey-color: #f2f2f2;
 $font-color: #000;
 $font: 'Open Sans', 'Phetsarath_OT', sans-serif;
 // media query
 @import './screen';
 @import './table';
 
+// Map Color
+// Vientiane Province
 
-// Global style
+
+// Global style start here
+.navbar-brand .icon-rice{
+    color: #fff;
+    font-size: 40px;
+}
 .jumbotron{
     background-color: #fff;
     margin-bottom: 0;
-    padding: 3rem 2rem;
+    padding: 1.75rem 2rem;
+    @include mobile{
+        padding: 1.75rem 0rem;
+    }
+    figure{
+        display: block;
+    }
 }
-.row{
+
+.page-title{
+    text-align: center;
+    font-family: $font;
+    &.show  .btn{
+        background: transparent;
+        color: $font-color;
+        &:focus{
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    .btn{
+        font-size: 30px;
+        background: transparent;
+        color: $font-color;
+        border-top: 0;
+        border-left: 0;
+        border-radius: 0;
+        border-right: 0;
+    }
+
+}
+
+// make table scrollable
+.table-container{
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
+
+.icon-rice{
+    color: $primary-color;
+}
+.breadcrumb-container{
+    color: $font-color;
+    background-color: $light-grey-color;
+    font-family: $font;
+    .breadcrumb{
+        padding: 30px 0;
+        background-color: transparent;
+        a{
+            color: $primary-color;
+        }
+    }
+}
+// Global style end here
+
+
 // navbar start here
 nav.navbar{
     background-color: $primary-color;
@@ -26,6 +85,11 @@ nav.navbar{
     }
     .nav-link{
         color: #fff;
+        font-family: $font;
+    }
+    .navbar-toggler{
+        background-color: rgba(#000, .3);
+        border: none;
     }
 }
 // navbar end here

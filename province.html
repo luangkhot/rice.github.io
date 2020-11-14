@@ -11,11 +11,11 @@
 </head>
 <body>
     <!-- Navbar start here -->
-    <nav class="navbar navbar-expand-lg is-primary">
+    <nav class="navbar is-primary navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html"><span class="icon-rice"></span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
         
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -38,40 +38,34 @@
     </nav>
     <!-- Navbar end here -->
 
-
-    <!-- Top top-area start here -->
-    <div class="jumbotron top-area">
+    <!-- Breadcrumb start here -->
+    <nav class="breadcrumb-container">
         <div class="container">
-            <div class="flex">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="box">
-                            <p>ລາຄາເຂົ້າເປືອກ</p>
-                            <h3 class="top-area-price">7,000 - 8,900 </h3>
-                            <span>ກີບ/ກິໂລ</span>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="box">
-                            <p>ລາຄາເຂົ້າສານໜຽວ</p>
-                            <h3 class="top-area-price">9,000 - 11,000</h3>
-                            <span>ກີບ/ກິໂລ</span>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="box">
-                            <p>ລາຄາເຂົ້າສານຈ້າວ</p>
-                            <h3 class="top-area-price">12,000 - 13,000</h3>
-                            <span>ກີບ/ກິໂລ</span>
-                        </div>
-                    </div>
-                </div>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">ໜ້າຫຼັກ</a></li>
+                <li class="breadcrumb-item active" aria-current="page">ແຂວງນະຄອນຫຼວງວຽງຈັນ</li>
+            </ol>
+        </div>  
+    </nav>
+    <!-- Breadcrumb end here -->
+
+
+<div class="jumbotron">
+    <div class="container">
+        <div class="dropdown page-title">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                ຂໍ້ມູນ: ນະຄອນຫຼວງວຽງຈັນ
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">ນະຄອນຫຼວງວຽງຈັນ</a>
+              <a class="dropdown-item" href="#">ແຂວງບໍລິຄຳໄຊ</a>
+              <a class="dropdown-item" href="#">ແຂວງຄໍາມ່ວນ</a>
+              <a class="dropdown-item" href="#">ແຂວງໄຊຍະບູລີ</a>
+              <a class="dropdown-item" href="#">ແຂວງວຽງຈັນ</a>
             </div>
-        </div>
+          </div>
     </div>
-    <!-- Top top-area end here -->
-
-
+</div>
     <!-- ແນວໂນ້ມໃນປີ start here -->
     <div class="jumbotron trending">
         <div class="container">
@@ -79,7 +73,7 @@
             <div class="row">
                 <div class="col-md-4 col-sm-12">
                     <figure class="figure">
-                        <img class="map" src="./image/map.svg" alt="">
+                        <img class="map" src="./image/VTE.svg" alt="">
                         <!-- <img src="./image/Provinces-Laos.jpg" class="figure-img img-fluid rounded"> -->
                     </figure>
                 </div>
@@ -88,43 +82,61 @@
                         <table class="table">
                             <thead>
                             <tr>
-                                <th scope="col">ແຂວງ</th>
+                                <th scope="col">ເມືອງ</th>
                                 <th scope="col" class="text-right">ຍອດຜະລິດ (ໂຕນ)</th>
                                 <th scope="col" class="text-right">ຍອດຈຳໜ່າຍ (ໂຕນ)</th>
                                 <th scope="col" class="text-right">ຍອດຂາຍ (ກີບ)</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <th scope="row">ນະຄອນຫຼວງວຽງຈັນ</th>
-                                <td class="text-right">1,000</td>
-                                <td class="text-right">1,000</td>
-                                <td class="text-right">1,000</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">ແຂວງບໍລິຄຳໄຊ</th>
-                                <td class="text-right">1,000</td>
-                                <td class="text-right">1,000</td>
-                                <td class="text-right">1,000</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">ແຂວງຄໍາມ່ວນ</th>
-                                <td class="text-right">1,000</td>
-                                <td class="text-right">1,000</td>
-                                <td class="text-right">1,000</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">ແຂວງໄຊຍະບູລີ</th>
-                                <td class="text-right">1,000</td>
-                                <td class="text-right">1,000</td>
-                                <td class="text-right">1,000</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">ແຂວງວຽງຈັນ</th>
-                                <td class="text-right">1,000</td>
-                                <td class="text-right">1,000</td>
-                                <td class="text-right">1,000</td>
-                            </tr>
+                                <tr>
+                                    <th scope="row">ເມືອສີໂຄຕະບອງ</th>
+                                    <td class="text-right">1,000</td>
+                                    <td class="text-right">1,000</td>
+                                    <td class="text-right">1,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">ເມືອງໄຊເສດຖາ</th>
+                                    <td class="text-right">1,000</td>
+                                    <td class="text-right">1,000</td>
+                                    <td class="text-right">1,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">ເມືອງສີສັດຕະນາກ</th>
+                                    <td class="text-right">1,000</td>
+                                    <td class="text-right">1,000</td>
+                                    <td class="text-right">1,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">ເມືອງນາຊາຍທອງ</th>
+                                    <td class="text-right">1,000</td>
+                                    <td class="text-right">1,000</td>
+                                    <td class="text-right">1,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">ເມືອງໄຊທານີ</th>
+                                    <td class="text-right">1,000</td>
+                                    <td class="text-right">1,000</td>
+                                    <td class="text-right">1,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">ເມືອງຫາດຊາຍຟອງ</th>
+                                    <td class="text-right">1,000</td>
+                                    <td class="text-right">1,000</td>
+                                    <td class="text-right">1,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">ເມືອງສັງທອງ</th>
+                                    <td class="text-right">1,000</td>
+                                    <td class="text-right">1,000</td>
+                                    <td class="text-right">1,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">ເມືອງປາກງື່ມ</th>
+                                    <td class="text-right">1,000</td>
+                                    <td class="text-right">1,000</td>
+                                    <td class="text-right">1,000</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -158,31 +170,49 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <th scope="row">ນະຄອນຫຼວງວຽງຈັນ</th>
+                                <th scope="row">ເມືອສີໂຄຕະບອງ</th>
                                 <td class="text-right">1,000</td>
                                 <td class="text-right">1,000</td>
                                 <td class="text-right">1,000</td>
                             </tr>
                             <tr>
-                                <th scope="row">ແຂວງບໍລິຄຳໄຊ</th>
+                                <th scope="row">ເມືອງໄຊເສດຖາ</th>
                                 <td class="text-right">1,000</td>
                                 <td class="text-right">1,000</td>
                                 <td class="text-right">1,000</td>
                             </tr>
                             <tr>
-                                <th scope="row">ແຂວງຄໍາມ່ວນ</th>
+                                <th scope="row">ເມືອງສີສັດຕະນາກ</th>
                                 <td class="text-right">1,000</td>
                                 <td class="text-right">1,000</td>
                                 <td class="text-right">1,000</td>
                             </tr>
                             <tr>
-                                <th scope="row">ແຂວງໄຊຍະບູລີ</th>
+                                <th scope="row">ເມືອງນາຊາຍທອງ</th>
                                 <td class="text-right">1,000</td>
                                 <td class="text-right">1,000</td>
                                 <td class="text-right">1,000</td>
                             </tr>
                             <tr>
-                                <th scope="row">ແຂວງວຽງຈັນ</th>
+                                <th scope="row">ເມືອງໄຊທານີ</th>
+                                <td class="text-right">1,000</td>
+                                <td class="text-right">1,000</td>
+                                <td class="text-right">1,000</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">ເມືອງຫາດຊາຍຟອງ</th>
+                                <td class="text-right">1,000</td>
+                                <td class="text-right">1,000</td>
+                                <td class="text-right">1,000</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">ເມືອງສັງທອງ</th>
+                                <td class="text-right">1,000</td>
+                                <td class="text-right">1,000</td>
+                                <td class="text-right">1,000</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">ເມືອງປາກງື່ມ</th>
                                 <td class="text-right">1,000</td>
                                 <td class="text-right">1,000</td>
                                 <td class="text-right">1,000</td>

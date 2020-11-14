@@ -8,7 +8,8 @@
   font-size: 24px;
   font-weight: 700;
   font-family: "Open Sans", "Phetsarath_OT", sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  color: #89A727;
 }
 
 table.table {
@@ -21,22 +22,77 @@ table.table thead tr {
 }
 table.table thead tr th {
   font-weight: 500;
+  white-space: pre;
 }
 table.table tbody tr th {
   font-weight: 500;
+  white-space: pre;
 }
 table.table tbody tr td {
   font-weight: 500;
 }
 
+.navbar-brand .icon-rice {
+  color: #fff;
+  font-size: 40px;
+}
+
 .jumbotron {
   background-color: #fff;
   margin-bottom: 0;
-  padding: 3rem 2rem;
+  padding: 1.75rem 2rem;
+}
+@media (max-width: 768px) {
+  .jumbotron {
+    padding: 1.75rem 0rem;
+  }
+}
+.jumbotron figure {
+  display: block;
 }
 
-.row {
+.page-title {
+  text-align: center;
+  font-family: "Open Sans", "Phetsarath_OT", sans-serif;
+}
+.page-title.show .btn {
+  background: transparent;
+  color: #000;
+}
+.page-title.show .btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+.page-title .btn {
+  font-size: 30px;
+  background: transparent;
+  color: #000;
+  border-top: 0;
+  border-left: 0;
+  border-radius: 0;
+  border-right: 0;
+}
+
+.table-container {
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.icon-rice {
+  color: #89A727;
+}
+
+.breadcrumb-container {
+  color: #000;
+  background-color: #f2f2f2;
+  font-family: "Open Sans", "Phetsarath_OT", sans-serif;
+}
+.breadcrumb-container .breadcrumb {
+  padding: 30px 0;
+  background-color: transparent;
+}
+.breadcrumb-container .breadcrumb a {
+  color: #89A727;
 }
 
 nav.navbar {
@@ -49,6 +105,11 @@ nav.navbar .navbar-brand {
 }
 nav.navbar .nav-link {
   color: #fff;
+  font-family: "Open Sans", "Phetsarath_OT", sans-serif;
+}
+nav.navbar .navbar-toggler {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
 }
 
 .top-area {
