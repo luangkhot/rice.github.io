@@ -23,6 +23,9 @@ table.table{
             th{
                 font-weight: 500;
                 white-space: pre;
+                a{
+                    color: $font-color;
+                }
             }
             td{
                 font-weight: 500;

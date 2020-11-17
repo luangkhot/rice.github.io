@@ -28,6 +28,9 @@ table.table tbody tr th {
   font-weight: 500;
   white-space: pre;
 }
+table.table tbody tr th a {
+  color: #000;
+}
 table.table tbody tr td {
   font-weight: 500;
 }
@@ -113,7 +116,7 @@ nav.navbar .navbar-toggler {
 }
 
 .top-area {
-  margin: 0;
+  margin: 0 0 2rem 0;
   border-radius: 0;
   width: 100%;
   min-height: 350px;
