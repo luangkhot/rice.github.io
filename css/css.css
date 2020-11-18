@@ -81,6 +81,18 @@ table.table tbody tr td {
   -webkit-overflow-scrolling: touch;
 }
 
+nav.nav {
+  margin-bottom: 5px;
+}
+nav.nav a {
+  font-family: "Open Sans", "Phetsarath_OT", sans-serif;
+  color: #000;
+  cursor: pointer;
+}
+nav.nav a.active {
+  font-weight: 700;
+}
+
 .icon-rice {
   color: #89A727;
 }
@@ -146,7 +158,7 @@ nav.navbar .navbar-toggler {
 .top-area .flex .row .box {
   border: none;
   padding: 20px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 5px;
 }
 @media (max-width: 768px) {
@@ -195,18 +207,6 @@ nav.navbar .navbar-toggler {
   .top-area .flex .row .box span {
     font-size: 14px;
   }
-}
-
-.updated-price nav.nav {
-  margin-bottom: 5px;
-}
-.updated-price nav.nav a {
-  font-family: "Open Sans", "Phetsarath_OT", sans-serif;
-  color: #000;
-  cursor: pointer;
-}
-.updated-price nav.nav a.active {
-  font-weight: 700;
 }
 
 footer {

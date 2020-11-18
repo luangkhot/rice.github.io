@@ -56,7 +56,17 @@ $font: 'Open Sans', 'Phetsarath_OT', sans-serif;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 }
-
+nav.nav{
+    margin-bottom: 5px;
+    a{
+        font-family: $font;
+        color: $font-color;
+        cursor: pointer;
+        &.active{
+            font-weight: 700;
+        }
+    }
+}
 .icon-rice{
     color: $primary-color;
 }
@@ -121,8 +131,9 @@ nav.navbar{
             .box{
                 border: none;
                 padding: 20px;
-                background-color: #fff;
+                background-color: rgba(#fff, .9);
                 border-radius: 5px;
+                
                 @include mobile{
                     margin-bottom: 5px;
                 }
@@ -162,23 +173,8 @@ nav.navbar{
         }
     }
 } //top-area
-// Top area end here
 
-// ລາຄາສິນຄ້າອັບເດດລ້າສຸດ start here
-.updated-price{
-    nav.nav{
-        margin-bottom: 5px;
-        a{
-            font-family: $font;
-            color: $font-color;
-            cursor: pointer;
-            &.active{
-                font-weight: 700;
-            }
-        }
-    }
-} //updated-price
-// ລາຄາສິນຄ້າອັບເດດລ້າສຸດ end here
+// Top area end here
 
 
 // Footer start here
