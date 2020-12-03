@@ -9,7 +9,7 @@
   font-weight: 700;
   font-family: "Open Sans", "Phetsarath_OT", sans-serif;
   margin-bottom: 15px;
-  color: #89A727;
+  color: #558E24;
 }
 
 table.table {
@@ -17,7 +17,7 @@ table.table {
   font-weight: 500;
 }
 table.table thead tr {
-  background-color: #89A727;
+  background-color: #558E24;
   color: #fff;
 }
 table.table thead tr th {
@@ -33,6 +33,36 @@ table.table tbody tr th a {
 }
 table.table tbody tr td {
   font-weight: 500;
+}
+
+.card {
+  height: 300px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  background-position: center;
+  background-size: cover;
+}
+.card::after {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(transparent, black);
+}
+.card p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  margin: 0;
+  font-family: "Open Sans", "Phetsarath_OT", sans-serif;
+  color: #fff;
+  z-index: 999;
 }
 
 .navbar-brand .icon-rice {
@@ -52,6 +82,13 @@ table.table tbody tr td {
 }
 .jumbotron figure {
   display: block;
+}
+
+.section-title {
+  font-family: "Open Sans", "Phetsarath_OT", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 15px;
 }
 
 .page-title {
@@ -94,7 +131,7 @@ nav.nav a.active {
 }
 
 .icon-rice {
-  color: #89A727;
+  color: #558E24;
 }
 
 .breadcrumb-container {
@@ -107,11 +144,11 @@ nav.nav a.active {
   background-color: transparent;
 }
 .breadcrumb-container .breadcrumb a {
-  color: #89A727;
+  color: #558E24;
 }
 
 nav.navbar {
-  background-color: #89A727;
+  background-color: #558E24;
   display: flex;
   color: #fff;
 }
@@ -127,90 +164,56 @@ nav.navbar .navbar-toggler {
   border: none;
 }
 
-.top-area {
-  margin: 0 0 2rem 0;
-  border-radius: 0;
-  width: 100%;
-  min-height: 350px;
-  max-height: 500px;
-  background-size: cover;
-  background-position: center;
-  background-image: url("../image/rice.jpeg");
-  display: flex;
-  align-items: center;
-}
-.top-area .container {
-  height: 100%;
-}
-.top-area .flex {
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-@media (max-width: 768px) {
-  .top-area .flex {
-    align-items: flex-start;
-  }
-}
-.top-area .flex .row {
-  flex-grow: 1;
-}
-.top-area .flex .row .box {
-  border: none;
+.box {
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 5px;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border: 3px solid #558E24;
+  cursor: pointer;
 }
-@media (max-width: 768px) {
-  .top-area .flex .row .box {
-    margin-bottom: 5px;
-  }
+.box .dark-bg {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999;
 }
-.top-area .flex .row .box p {
-  font-family: "Open Sans", "Phetsarath_OT", sans-serif;
-  line-height: 1.5;
-  margin: 0;
+.box p {
+  position: absolute;
   font-size: 18px;
-  font-weight: 600;
-}
-@media (max-width: 768px) {
-  .top-area .flex .row .box p {
-    font-size: 16px;
-  }
-}
-.top-area .flex .row .box h3.top-area-price {
-  font-weight: 700;
-  color: #89A727;
-  font-family: "Open Sans", "Phetsarath_OT", sans-serif;
-  line-height: 1.5;
   margin: 0;
-}
-@media (max-width: 768px) {
-  .top-area .flex .row .box h3.top-area-price {
-    font-size: 20px !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .top-area .flex .row .box h3.top-area-price {
-    font-size: 22 !important;
-  }
-}
-@media (min-width: 1024px) and (max-width: 1216px) {
-  .top-area .flex .row .box h3.top-area-price {
-    font-size: 32px;
-  }
-}
-.top-area .flex .row .box span {
+  bottom: 0;
+  left: 0;
+  background-color: #558E24;
+  padding: 5px 20px;
+  z-index: 999;
+  border-radius: 0 5px 0 0;
+  color: #fff;
   font-family: "Open Sans", "Phetsarath_OT", sans-serif;
 }
+.box.rice {
+  background-image: url("../image/rice.jpg");
+}
+.box.corn {
+  background-image: url("../image/corn.jpg");
+}
+.box.vegetable {
+  background-image: url("../image/vegetables.jpg");
+}
 @media (max-width: 768px) {
-  .top-area .flex .row .box span {
-    font-size: 14px;
+  .box {
+    margin-bottom: 5px;
   }
 }
 
 footer {
-  background-color: #89A727;
+  background-color: #558E24;
   color: #fff;
   font-family: "Open Sans", "Phetsarath_OT", sans-serif;
   padding-bottom: 0;
