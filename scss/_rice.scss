@@ -1,0 +1,71 @@
+// Top area start here
+.jumbotron.top-area{
+    margin: 0 0 2rem 0;
+    border-radius: 0;
+    width: 100%;
+    min-height: 350px;
+    max-height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../image/rice.jpg");
+    display: flex;
+    align-items: center;
+    .container{
+        height: 100%;
+    }
+    .flex{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        @include mobile{
+            align-items: flex-start;
+        }
+        .row{
+            flex-grow: 1;
+            .box{
+                border: none;
+                padding: 20px;
+                background-color: rgba(#fff, .9);
+                border-radius: 5px;
+                
+                @include mobile{
+                    margin-bottom: 5px;
+                }
+                p{
+                    font-family: $font;
+                    line-height: 1.5;
+                    margin: 0;
+                    font-size: 18px;
+                    font-weight: 600;
+                    @include mobile{
+                        font-size: 16px;
+                    }
+                }
+                h3.top-area-price{
+                    font-weight: 700;
+                    color: $primary-color;
+                    font-family: $font;
+                    line-height: 1.5;
+                    margin: 0;
+                    @include mobile{
+                        font-size: 20px !important;
+                    }
+                    @include tablet{
+                        font-size: 22 !important;
+                    }
+                    @include desktop{
+                        font-size: 32px;
+                    }
+                }
+                span{
+                    font-family: $font;
+                    @include mobile{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+} //top-area
+
+// Top area end here

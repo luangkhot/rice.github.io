@@ -19,17 +19,26 @@
             </button>
         
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">ໜ້າຫຼັກ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">ກ່ຽວກັບພວກເຮົາ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="province.html">ຕີດຕໍ່ເຮົາ</a>
-                </li>
-            </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">ໜ້າຫຼັກ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ຂ່າວສານ ແລະ ກິດຈະກຳ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="price.html">ລາຄາສິນຄ້າ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="area.html">ເນື້ອທີ່ການຜະລິດ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="produce.html">ຍອດການຜະລິດ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">ກ່ຽວກັບເວັບໄຊທ</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -37,16 +46,17 @@
 
 
     <!-- Top top-area start here -->
-    <div class="jumbotron">
+    <!-- edit in rice.scss -->
+    <div class="jumbotron produst-lists">
         <div class="container">
             <h3 class="section-title">ຂໍ້ມູນສິນຄ້າ</h3>
             <div class="row">
-                <div class="col-md-4">
+                <a href="rice.html" class="col-md-4">
                     <div class="box rice">
                         <div class="dark-bg"></div>
                         <p>ເຂົ້າສານ</p>
                     </div>
-                </div>
+                </a>
                 <div class="col-md-4">
                     <div class="box corn">
                         <div class="dark-bg"></div>
@@ -70,16 +80,42 @@
         <div class="container">
             <h3 class="section-title">ແຂວງທີ່ມີຂໍ້ມູນສູນຄ້າ</h3>
             <div class="row">
+
                 <div class="col-md-4">
                     <div class="row">
                         <div class="col-md-12">
+                            <!-- Country Map -->
                             <div id="container"></div>
+
                         </div>
                         <div class="col-md-12">
-                            sdfsdf
-                        </div>
-                    </div>
-                </div>
+                            <h3 class="section-title">ເນື້ອທີ່ການຜະລິດ</h3>
+                            <ul class="area-list">
+                                <li>
+                                    <span>ນະຄອນຫຼວງວຽງຈັນ</span>
+                                    <span>1,000</span>
+                                </li>
+                                <li>
+                                    <span>ແຂວງບໍລິຄຳໄຊ</span>
+                                    <span>1,000</span>
+                                </li>
+                                <li>
+                                    <span>ແຂວງຄໍາມ່ວນ</span>
+                                    <span>1,000</span>
+                                </li>
+                                <li>
+                                    <span>ແຂວງໄຊຍະບູລີ</span>
+                                    <span>1,000</span>
+                                </li>
+                                <li>
+                                    <span>ແຂວງວຽງຈັນ</span>
+                                    <span>1,000</span>
+                                </li>
+                            </ul>
+                        </div> <!-- col-md-12-->
+                    </div> <!-- row -->
+                </div> <!-- col-md-4 -->
+
                 <div class="col-md-8">
                     <div class="row">
                         <div class="col-md-12">
@@ -101,35 +137,35 @@
             <h3 class="section-title">ຂ່າວສານ ແລະ ກິດຈະກຳ</h3>
             <div class="row">
                 <div class="col-md-6 pr-md-1">
-                    <div class="card mb-md-3" style="background-image: url('./image//vegetables.jpg')">
+                    <div class="card card-bg mb-md-3" style="background-image: url('./image//vegetables.jpg')">
                         <div class="bg"></div>
                         <p>ວິໄສທັດ ວິທະຍາໄລກະສິກຳ ແລະ ປ່າໄມ້ ພາກເໜືອ ເປັນສະຖາບັນດີເດັ່ນ
                             ກ່ຽວກັບລະບົບກະສິກໍາ ແລະປ່າໄມ້ ເຂດເນີນສູງ ແບບຍືນຍົງ</p>
                     </div>
                 </div>
                 <div class="col-md-6 pr-md-1">
-                    <div class="card mb-md-3" style="background-image: url('./image//vegetables.jpg')">
+                    <div class="card card-bg mb-md-3" style="background-image: url('./image//vegetables.jpg')">
                         <div class="bg"></div>
                         <p>ວິໄສທັດ ວິທະຍາໄລກະສິກຳ ແລະ ປ່າໄມ້ ພາກເໜືອ ເປັນສະຖາບັນດີເດັ່ນ
                             ກ່ຽວກັບລະບົບກະສິກໍາ ແລະປ່າໄມ້ ເຂດເນີນສູງ ແບບຍືນຍົງ</p>
                     </div>
                 </div>
                 <div class="col-md-4 pr-md-1">
-                    <div class="card mb-md-3" style="background-image: url('./image//01_beet_greens.jpg')">
+                    <div class="card card-bg mb-md-3" style="background-image: url('./image//01_beet_greens.jpg')">
                         <div class="bg"></div>
                         <p>ວິໄສທັດ ວິທະຍາໄລກະສິກຳ ແລະ ປ່າໄມ້ ພາກເໜືອ ເປັນສະຖາບັນດີເດັ່ນ
                             ກ່ຽວກັບລະບົບກະສິກໍາ ແລະປ່າໄມ້ ເຂດເນີນສູງ ແບບຍືນຍົງ</p>
                     </div>
                 </div>
                 <div class="col-md-4 pr-md-1">
-                    <div class="card mb-md-3" style="background-image: url('./image/vegetables2.jpg')">
+                    <div class="card card-bg mb-md-3" style="background-image: url('./image/vegetables2.jpg')">
                         <div class="bg"></div>
                         <p>ວິໄສທັດ ວິທະຍາໄລກະສິກຳ ແລະ ປ່າໄມ້ ພາກເໜືອ ເປັນສະຖາບັນດີເດັ່ນ
                             ກ່ຽວກັບລະບົບກະສິກໍາ ແລະປ່າໄມ້ ເຂດເນີນສູງ ແບບຍືນຍົງ</p>
                     </div>
                 </div>
                 <div class="col-md-4 pr-md-1">
-                    <div class="card mb-md-3" style="background-image: url('./image/rice2.jpg')">
+                    <div class="card card-bg mb-md-3" style="background-image: url('./image/rice2.jpg')">
                         <div class="bg"></div>
                         <p>ວິໄສທັດ ວິທະຍາໄລກະສິກຳ ແລະ ປ່າໄມ້ ພາກເໜືອ ເປັນສະຖາບັນດີເດັ່ນ
                             ກ່ຽວກັບລະບົບກະສິກໍາ ແລະປ່າໄມ້ ເຂດເນີນສູງ ແບບຍືນຍົງ</p>
@@ -142,13 +178,14 @@
 
 
     <!-- recent update price start here -->
-    <div class="jumbotron updated-price">
+    <div class="jumbotron">
         <div class="container">
             <div class="table-title"><span class="icon-rice"></span> ລາຄາສິນຄ້າອັບເດດລ້າສຸດ</div>
             <nav class="nav">
-                <a class="nav-link active">ເຂົ້າໜຽວ</a>
-                <a class="nav-link">ເຂົ້າຈ້າວ</a>
-                <a class="nav-link">ເຂົ້າເປືອກ</a>
+                <a class="nav-link active">ເຂົ້າສານຈ້າວ</a>
+                <a class="nav-link">ເຂົ້າສານໜຽວ</a>
+                <a class="nav-link">ເຂົ້າເປືອກຈ້າວ</a>
+                <a class="nav-link">ເຂົ້າເປືອກໜຽວ</a>
             </nav>
             <div class="row">
                 <div class="col-lg-12">
@@ -157,9 +194,9 @@
                             <thead>
                             <tr>
                                 <th scope="col">ແຂວງ</th>
-                                <th scope="col" class="text-right">ຍອດຜະລິດ (ໂຕນ)</th>
-                                <th scope="col" class="text-right">ຍອດຈຳໜ່າຍ (ໂຕນ)</th>
-                                <th scope="col" class="text-right">ຍອດຂາຍ (ກີບ)</th>
+                                <th scope="col" class="text-right">ລາຄາເກົ່າ (ກີບ)</th>
+                                <th scope="col" class="text-right">ລາຄາລ້າສຸດ (ກີບ)</th>
+                                <th scope="col" class="text-right">ວັນທີອັບເດດ</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -167,31 +204,31 @@
                                 <th scope="row">ນະຄອນຫຼວງວຽງຈັນ</th>
                                 <td class="text-right">1,000</td>
                                 <td class="text-right">1,000</td>
-                                <td class="text-right">1,000</td>
+                                <td class="text-right">12, ທັນວານ 2020</td>
                             </tr>
                             <tr>
                                 <th scope="row">ແຂວງບໍລິຄຳໄຊ</th>
                                 <td class="text-right">1,000</td>
                                 <td class="text-right">1,000</td>
-                                <td class="text-right">1,000</td>
+                                <td class="text-right">12, ທັນວານ 2020</td>
                             </tr>
                             <tr>
                                 <th scope="row">ແຂວງຄໍາມ່ວນ</th>
                                 <td class="text-right">1,000</td>
                                 <td class="text-right">1,000</td>
-                                <td class="text-right">1,000</td>
+                                <td class="text-right">12, ທັນວານ 2020</td>
                             </tr>
                             <tr>
                                 <th scope="row">ແຂວງໄຊຍະບູລີ</th>
                                 <td class="text-right">1,000</td>
                                 <td class="text-right">1,000</td>
-                                <td class="text-right">1,000</td>
+                                <td class="text-right">12, ທັນວານ 2020</td>
                             </tr>
                             <tr>
                                 <th scope="row">ແຂວງວຽງຈັນ</th>
                                 <td class="text-right">1,000</td>
                                 <td class="text-right">1,000</td>
-                                <td class="text-right">1,000</td>
+                                <td class="text-right">12, ທັນວານ 2020</td>
                             </tr>
                             </tbody>
                         </table>

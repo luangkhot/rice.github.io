@@ -35,7 +35,7 @@ table.table tbody tr td {
   font-weight: 500;
 }
 
-.card {
+.card-bg {
   height: 300px;
   display: block;
   position: relative;
@@ -44,7 +44,7 @@ table.table tbody tr td {
   background-position: center;
   background-size: cover;
 }
-.card::after {
+.card-bg::after {
   position: absolute;
   content: "";
   display: block;
@@ -54,7 +54,7 @@ table.table tbody tr td {
   height: 50%;
   background: linear-gradient(transparent, black);
 }
-.card p {
+.card-bg p {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -63,6 +63,88 @@ table.table tbody tr td {
   font-family: "Open Sans", "Phetsarath_OT", sans-serif;
   color: #fff;
   z-index: 999;
+}
+
+.jumbotron.top-area {
+  margin: 0 0 2rem 0;
+  border-radius: 0;
+  width: 100%;
+  min-height: 350px;
+  max-height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../image/rice.jpg");
+  display: flex;
+  align-items: center;
+}
+.jumbotron.top-area .container {
+  height: 100%;
+}
+.jumbotron.top-area .flex {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .jumbotron.top-area .flex {
+    align-items: flex-start;
+  }
+}
+.jumbotron.top-area .flex .row {
+  flex-grow: 1;
+}
+.jumbotron.top-area .flex .row .box {
+  border: none;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+  .jumbotron.top-area .flex .row .box {
+    margin-bottom: 5px;
+  }
+}
+.jumbotron.top-area .flex .row .box p {
+  font-family: "Open Sans", "Phetsarath_OT", sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .jumbotron.top-area .flex .row .box p {
+    font-size: 16px;
+  }
+}
+.jumbotron.top-area .flex .row .box h3.top-area-price {
+  font-weight: 700;
+  color: #558E24;
+  font-family: "Open Sans", "Phetsarath_OT", sans-serif;
+  line-height: 1.5;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .jumbotron.top-area .flex .row .box h3.top-area-price {
+    font-size: 20px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .jumbotron.top-area .flex .row .box h3.top-area-price {
+    font-size: 22 !important;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1216px) {
+  .jumbotron.top-area .flex .row .box h3.top-area-price {
+    font-size: 32px;
+  }
+}
+.jumbotron.top-area .flex .row .box span {
+  font-family: "Open Sans", "Phetsarath_OT", sans-serif;
+}
+@media (max-width: 768px) {
+  .jumbotron.top-area .flex .row .box span {
+    font-size: 14px;
+  }
 }
 
 .navbar-brand .icon-rice {
@@ -159,12 +241,16 @@ nav.navbar .nav-link {
   color: #fff;
   font-family: "Open Sans", "Phetsarath_OT", sans-serif;
 }
+nav.navbar .nav-link.active {
+  font-weight: bold;
+  border-bottom: 1px solid #fff;
+}
 nav.navbar .navbar-toggler {
   background-color: rgba(0, 0, 0, 0.3);
   border: none;
 }
 
-.box {
+.produst-lists .box {
   padding: 20px;
   border-radius: 5px;
   height: 200px;
@@ -174,17 +260,17 @@ nav.navbar .navbar-toggler {
   border: 3px solid #558E24;
   cursor: pointer;
 }
-.box .dark-bg {
+.produst-lists .box .dark-bg {
   display: block;
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 999;
 }
-.box p {
+.produst-lists .box p {
   position: absolute;
   font-size: 18px;
   margin: 0;
@@ -197,19 +283,42 @@ nav.navbar .navbar-toggler {
   color: #fff;
   font-family: "Open Sans", "Phetsarath_OT", sans-serif;
 }
-.box.rice {
+.produst-lists .box.rice {
   background-image: url("../image/rice.jpg");
 }
-.box.corn {
+.produst-lists .box.rice .dark-bg {
+  background-color: transparent;
+}
+.produst-lists .box.corn {
   background-image: url("../image/corn.jpg");
 }
-.box.vegetable {
+.produst-lists .box.vegetable {
   background-image: url("../image/vegetables.jpg");
 }
 @media (max-width: 768px) {
-  .box {
+  .produst-lists .box {
     margin-bottom: 5px;
   }
+}
+
+ul.area-list {
+  padding: 0;
+}
+ul.area-list li {
+  font-family: "Open Sans", "Phetsarath_OT", sans-serif;
+  margin: 0;
+  padding: 10px 0;
+  list-style-type: none;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+ul.area-list li:last-child {
+  border-bottom: 1px solid #ddd;
+}
+ul.area-list li span:last-child {
+  font-weight: bold;
+  color: #558E24;
 }
 
 footer {
