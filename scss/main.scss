@@ -2,16 +2,14 @@
 // $primary-color: #89A727;
 $primary-color: #558E24;
 $light-grey-color: #f2f2f2;
+$border-color: #ddd;
 $font-color: #000;
 $font: 'Open Sans', 'Phetsarath_OT', sans-serif;
-// media query
+
 @import './screen';
 @import './table';
 @import './_card';
-
-
-// Map Color
-// Vientiane Province
+@import './_rice';
 
 
 // Global style start here
@@ -64,6 +62,8 @@ $font: 'Open Sans', 'Phetsarath_OT', sans-serif;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 }
+
+// Tabs
 nav.nav{
     margin-bottom: 5px;
     a{
@@ -75,9 +75,12 @@ nav.nav{
         }
     }
 }
+
 .icon-rice{
     color: $primary-color;
 }
+
+
 .breadcrumb-container{
     color: $font-color;
     background-color: $light-grey-color;
@@ -92,6 +95,7 @@ nav.nav{
 }
 // Global style end here
 
+
 // navbar start here
 nav.navbar{
     background-color: $primary-color;
@@ -103,6 +107,10 @@ nav.navbar{
     .nav-link{
         color: #fff;
         font-family: $font;
+        &.active{
+            font-weight: bold;
+            border-bottom: 1px solid #fff;
+        }
     }
     .navbar-toggler{
         background-color: rgba(#000, .3);
@@ -111,53 +119,84 @@ nav.navbar{
 }
 // navbar end here
 
-// Top area start here
-.box{
-    padding: 20px;
-    border-radius: 5px;
-    height: 200px;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    border: 3px solid $primary-color;
-    cursor: pointer;
-    .dark-bg{
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(#000, .3);
-        z-index: 999;
-    }
-    p{
-        position: absolute;
-        font-size: 18px;
-        margin: 0;
-        bottom: 0;
-        left: 0;
-        background-color: $primary-color;
-        padding: 5px 20px;
-        z-index: 999;
-        border-radius: 0 5px 0 0;
-        color: #fff;
-        font-family: $font;
-    }
-    &.rice{
-        background-image: url('../image/rice.jpg');
-    }
-    &.corn{
-        background-image: url('../image/corn.jpg');
-    }
-    &.vegetable{
-        background-image: url('../image/vegetables.jpg');
-    }
-    @include mobile{
-        margin-bottom: 5px;
+
+// Top area index page start here
+.produst-lists{
+    .box{
+        padding: 20px;
+        border-radius: 5px;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        border: 3px solid $primary-color;
+        cursor: pointer;
+        .dark-bg{
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(#000, .5);
+            z-index: 999;
+        }
+        p{
+            position: absolute;
+            font-size: 18px;
+            margin: 0;
+            bottom: 0;
+            left: 0;
+            background-color: $primary-color;
+            padding: 5px 20px;
+            z-index: 999;
+            border-radius: 0 5px 0 0;
+            color: #fff;
+            font-family: $font;
+        }
+        &.rice{
+            background-image: url('../image/rice.jpg');
+            .dark-bg{
+                background-color: transparent;
+            }
+        }
+        &.corn{
+            background-image: url('../image/corn.jpg');
+        }
+        &.vegetable{
+            background-image: url('../image/vegetables.jpg');
+        }
+        @include mobile{
+            margin-bottom: 5px;
+        }
     }
 }
-// Top area end here
+// Top area index page start here
+
+
+// ເນື້ອທີ່ການຜະລິດ
+ul.area-list{
+    padding: 0;
+    li{
+        font-family: $font;
+        margin: 0;
+        padding: 10px 0;
+        list-style-type: none;
+        border-top: 1px solid $border-color;
+        display: flex;
+        justify-content: space-between;
+        &:last-child{
+            border-bottom: 1px solid $border-color;
+        }
+        span{
+            &:last-child{
+                font-weight: bold;
+                color: $primary-color;
+            }
+        }
+    }
+}
+//ເນື້ອທີ່ການຜະລິດ
 
 
 // Footer start here
