@@ -147,9 +147,150 @@ table.table tbody tr td {
   }
 }
 
+.main-content {
+  font-family: "Open Sans", "Phetsarath_OT", sans-serif;
+}
+
+.main-content .control-content {
+  padding-top: 15px;
+}
+.main-content .page-pagination-content {
+  display: flex;
+  justify-content: center;
+}
+.main-content .page-pagination-content ul.custom-content {
+  font-size: 1em;
+  color: black;
+}
+.main-content .content-news-main {
+  display: flex;
+}
+.main-content .content-news-main .news-content-left {
+  display: flex;
+  align-items: flex-start;
+}
+.main-content .content-news-main .news-content-left .image-content {
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+.main-content .content-news-main .news-content-left .image-content img {
+  width: 250px;
+  height: 150px;
+}
+.main-content .content-news-main .news-content-left .content-news h5 {
+  font-weight: bold;
+}
+.main-content .content-news-main .news-content-left .content-news .card-body h5.card-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.main-content .content-news-main .news-content-left .content-news .card-body p.card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.main-content .content-news-main .news-content-right .news-rents {
+  text-align: center;
+}
+.main-content .content-news-main .poppula {
+  padding-top: 15px;
+  text-align: center;
+}
+.main-content .content-news-main ul.bottom-content {
+  padding-bottom: 15px;
+}
+.main-content .content-news-main ul.bottom-content li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-social-share {
+  display: flex;
+  justify-content: center;
+}
+.header-social-share .social-share {
+  display: block;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+.header-social-share .social-share ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header-social-share li.share-now i {
+  font-size: 18px;
+  height: 30px;
+  text-align: center;
+}
+.header-social-share .social-share ul li {
+  float: left;
+  margin-left: 1rem;
+}
+.header-social-share .social-share ul li a i {
+  color: #fff;
+  font-size: 18px;
+  padding: 6px;
+  height: 30px;
+  width: 100PX;
+  text-align: center;
+  border-radius: 3px;
+  opacity: 1;
+}
+.header-social-share .social-share ul li a i:hover {
+  opacity: 0.7;
+}
+.header-social-share .social-share ul li a i.fa-twitter {
+  background-color: #1da1f2;
+}
+.header-social-share .social-share ul li a i.fa-facebook-f {
+  background-color: #3b5998;
+}
+.header-social-share .social-share ul li a i.fa-whatsapp {
+  background-color: #25d366;
+}
+.header-social-share .social-share ul li a i.fa-envelope {
+  background-color: #222831;
+}
+.header-social-share .social-share ul li a i.fa-reddit-alie {
+  background-color: #ff4500;
+}
+.header-social-share .social-share ul li a i.fa-linkedin-in {
+  background-color: #0077b5;
+}
+.header-social-share .social-share ul li a i.fa-pinterest-p {
+  background-color: #e60023;
+}
+@media (max-width: 767px) {
+  .header-social-share li.share-now {
+    display: none;
+  }
+}
+
+.main-content .content-news-main .news-content-left .image-content-read img {
+  width: 715px;
+}
+.main-content .content-news-main .news-content-left .content-read-title {
+  padding-top: 15px;
+}
+.main-content .content-news-main .news-content-left .content-read-title p {
+  font-size: 18px;
+  line-height: 150%;
+}
+
 .navbar-brand .icon-rice {
   color: #fff;
   font-size: 40px;
+}
+
+.navbar .navbar-brand.logo-main img {
+  width: 150px;
 }
 
 .jumbotron {
@@ -315,6 +456,10 @@ ul.area-list li {
 }
 ul.area-list li:last-child {
   border-bottom: 1px solid #ddd;
+}
+ul.area-list li span ul.area-list a {
+  text-decoration: none;
+  color: black;
 }
 ul.area-list li span:last-child {
   font-weight: bold;

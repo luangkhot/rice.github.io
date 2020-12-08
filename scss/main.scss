@@ -10,13 +10,24 @@ $font: 'Open Sans', 'Phetsarath_OT', sans-serif;
 @import './table';
 @import './_card';
 @import './_rice';
-
+@import './news';
+@import './read-news';
 
 // Global style start here
 .navbar-brand .icon-rice{
     color: #fff;
     font-size: 40px;
 }
+.navbar .navbar-brand.logo-main{
+    img{
+        width: 150px;
+    }
+}
+// nav .container .navbar-brand span{
+//     background-position: center;
+//     background-size: cover;
+// }
+
 .jumbotron{
     background-color: #fff;
     margin-bottom: 0;
@@ -189,10 +200,16 @@ ul.area-list{
             border-bottom: 1px solid $border-color;
         }
         span{
+            ul.area-list a{
+                text-decoration: none;
+                color: black;
+            }
             &:last-child{
                 font-weight: bold;
                 color: $primary-color;
+                
             }
+            
         }
     }
 }
