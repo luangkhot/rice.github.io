@@ -181,14 +181,14 @@ table.table tbody tr td {
 .main-content .content-news-main .news-content-left .content-news h5 {
   font-weight: bold;
 }
-.main-content .content-news-main .news-content-left .content-news .card-body h5.card-title {
+.main-content .content-news-main .news-content-left .content-news .card-body h5.card-title-text-ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
-.main-content .content-news-main .news-content-left .content-news .card-body p.card-text {
+.main-content .content-news-main .news-content-left .content-news .card-body p.card-text-ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -212,7 +212,6 @@ table.table tbody tr td {
 
 .header-social-share {
   display: flex;
-  justify-content: center;
 }
 .header-social-share .social-share {
   display: block;
@@ -238,7 +237,7 @@ table.table tbody tr td {
   font-size: 18px;
   padding: 6px;
   height: 30px;
-  width: 100PX;
+  width: 40px;
   text-align: center;
   border-radius: 3px;
   opacity: 1;
@@ -273,15 +272,53 @@ table.table tbody tr td {
   }
 }
 
-.main-content .content-news-main .news-content-left .image-content-read img {
+.main-content .card.bottom-news-content {
+  width: 18rem;
+}
+.main-content .card.bottom-news-content .card-body h5.card-title-text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.main-content .card.bottom-news-content .card-body p.card-text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.main-content .news-content-left .image-content-read img {
   width: 715px;
 }
-.main-content .content-news-main .news-content-left .content-read-title {
+.main-content .news-content-left .content-read-title {
   padding-top: 15px;
 }
-.main-content .content-news-main .news-content-left .content-read-title p {
+.main-content .news-content-left .content-read-title p {
   font-size: 18px;
   line-height: 150%;
+}
+.main-content .news-content-right ul.top-content {
+  list-style-type: none;
+  margin: 0px 10px;
+  line-height: 200%;
+}
+.main-content .news-content-right ul.top-content a {
+  color: black;
+}
+.main-content .news-content-right ul.top-content a:hover {
+  color: green;
+}
+.main-content .news-content-right ul.bottom-content {
+  margin: 0px 10px;
+  line-height: 200%;
+}
+.main-content .news-content-right ul.bottom-content a li {
+  color: black;
+}
+.main-content .news-content-right ul.bottom-content a:hover {
+  color: green;
 }
 
 .navbar-brand .icon-rice {
