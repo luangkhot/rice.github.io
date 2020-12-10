@@ -1,4 +1,18 @@
-.header-social-share{
+header{
+    font-family: $font;
+}
+article{
+    font-family: $font;
+    padding-top: 15px;
+}
+.image-container{
+    img{
+        width: 100%;
+        display: block;
+    }
+}
+
+.social-share-container{
     display: flex;
     .social-share{
         display:block;
@@ -60,64 +74,26 @@
     }
 }
 
-.main-content{
-    .card.bottom-news-content{
-        width: 18rem;
-        .card-body{
-            h5.card-title-text-ellipsis{
-                overflow: hidden;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                -webkit-line-clamp: 2;
-                -webkit-box-orient: vertical;
-            }
-            p.card-text-ellipsis{
-                overflow: hidden;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                -webkit-line-clamp: 1;
-                -webkit-box-orient: vertical;
-            }
+ul.list-group{
+    list-style-type: none;
+    line-height: 200%;
+    font-family: $font;
+    margin-bottom: 20px;
+    li{
+        &.title{
+            color: $primary-color;
+            font-size: 24px;
+            font-weight: 700;
+            text-align: center;
         }
-    }
-    .news-content-left{
-        .image-content-read{
-            
-            img{
-                width: 715px;
-            }
+        & a{
+            color: black;
         }
-        .content-read-title{
-            padding-top: 15px;
-            p{
-                font-size: 18px;
-                line-height: 150%;
-            }
-        }
-    }
-    .news-content-right{
-        ul.top-content{
-            list-style-type: none;
-            margin: 0px 10px;
-            line-height: 200%;
-            a{
-                color: black;
-            }
-            a:hover{
-                color: green;
-            }
-        }
-        ul.bottom-content{
-            margin: 0px 10px;
-            line-height: 200%;
-            a{
-                li{
-                    color: black;
-                }
-            }
-            a:hover{
-                color: green;
-            }
+        &.has-count{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 0px;
         }
     }
 }
